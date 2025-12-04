@@ -13,11 +13,10 @@ app.set('view engine', 'ejs');
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 // COLOCAR OS MODELS AQUI (colocar o caminho ../)
-import Arco from './models/Arco.js';
-import Personagem from './models/Personagem.js';
-import Titans from './models/Titans.js';
-import Filme from './models/Filme.js';
-import multer from 'multer';
+import Arco from '../models/Arco.js';
+import Personagem from '../models/Personagem.js';
+import Titans from '../models/Titans.js';
+import Filme from '../models/Filme.js';
 
 //FIM MODELS
 
