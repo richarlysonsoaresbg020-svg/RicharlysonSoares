@@ -1,0 +1,34 @@
+<%-include('../cabecalho.ejs')%>
+ <header>
+        <h3>Editar Titã</h3>
+      </header>
+      <div class="content">
+        <form id="form-titam" method="post" autocomplete="off" >
+          <div class="grid">
+            <div>
+              <label for="nome">Nome do Titã</label>
+              <input id="nome" value="<%=titam.nome%>" name="nome" type="text" placeholder="Ex:Titan de Ataque" required>
+            </div>
+            <div>
+              <label for="nome">Habilidade</label>
+              <input id="habilidade" value="<%=titam.habilidade%>" name="habilidade" type="text" placeholder="Ex:Força" required>
+            </div>
+             <div>
+              <label for="nome">Portador</label>
+              <input id="portador" value="<%=titam.portador%>" name="portador" type="text" placeholder="Ex:Eren yeager" required>
+            </div>
+            <div>
+              <label for="foto">Foto</label>
+        <input id="foto" name="foto" type="file" accept="image/*" required onchange="previewFoto(event)">
+        <img id="preview" src="" alt="Preview" style="max-width: 200px; margin-top: 10px; display: none;">
+            </div>  
+        
+           <div class="field-help">Os campos com * são obrigatórios.</div>
+          <footer>
+            <a type="button" class="btn ghost" id="btn-cancelar" href="/titam/lst">Cancelar</a>
+            <button type="submit" class="btn primary">Editar Titã</button>
+          </footer>
+        </form>
+      </div>
+
+  <%-include('../rodape.ejs')%>

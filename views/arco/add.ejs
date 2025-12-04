@@ -1,0 +1,40 @@
+     <%-include('../cabecalho.ejs')%>
+     <header>
+        <h3>Adicionar Novo Arco</h3>
+      </header>
+      <div class="content">
+        <form id="form-arcos" method="post" autocomplete="off" action="/arco/add/ok">
+          <div class="grid">
+            <div>
+              <label for="nome">Nome do Arco</label>
+              <input id="nome" name="nome" type="text" placeholder="Ex: Arco da Queda de Shiganshina" required>
+            </div>
+           </br>
+
+             <div class="content">
+        <form id="form-arcos" method="post" autocomplete="off" action="/arco/add/ok">
+          <div class="grid">
+            <div>
+              <label for="Tempo">Tempo</label>
+              <input id="Tempo" name="Tempo" type="text" placeholder="Ex: 12 capitulos" required>
+            </div>
+            </br>
+
+             <div class="content">
+        <form id="form-arcos" method="post" autocomplete="off" action="/arco/add/ok">
+          <div class="grid">
+            <div>
+              <label for="historia">História</label>
+              <input id="historia" name="historia" type="text" placeholder="Ex: Invasão de Marley" required>
+            </div>
+            </br>
+
+     
+          <footer>
+            <a type="button" class="btn ghost" id="btn-cancelar" href="/arco/lst">Cancelar</a>
+            <button type="submit" class="btn primary">Adicionar Arco</button>
+          </footer>
+        </form>
+      </div>
+
+      <%-include('../rodape.ejs')%>

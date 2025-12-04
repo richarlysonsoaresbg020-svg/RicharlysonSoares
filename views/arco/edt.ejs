@@ -1,0 +1,30 @@
+<%-include('../cabecalho.ejs')%>
+ <header>
+        <h3>Editar arco</h3>
+      </header>
+      <div class="content">
+        <form id="form-arco" method="post" autocomplete="off" >
+          <div class="grid">
+            <div>
+              <label for="nome">Nome do arco</label>
+              <input id="nome" value="<%=arco.nome%>" name="nome" type="text" placeholder="Ex:Queda do muro de shingashina" required>
+            </div>
+              <div>
+              <label for="nome">Tempo</label>
+              <input id="Tempo" value="<%=arco.Tempo%>" name="Tempo" type="text" placeholder="Ex:12 capitulos" required>
+            </div>
+              <div>
+              <label for="nome">Historia</label>
+              <input id="historia" value="<%=arco.historia%>" name="historia" type="text" placeholder="Ex:Titãs destruiram os muros" required>
+            </div>
+           
+     
+           <div class="field-help">Os campos com * são obrigatórios.</div>
+          <footer>
+            <a type="button" class="btn ghost" id="btn-cancelar" href="/arco/lst">Cancelar</a>
+            <button type="submit" class="btn primary">Editar Arco</button>
+          </footer>
+        </form>
+      </div>
+
+  <%-include('../rodape.ejs')%>
